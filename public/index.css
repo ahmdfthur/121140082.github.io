@@ -1,0 +1,105 @@
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}   
+
+body {	
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('./back_itera.jpeg');
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.853);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.header .title {
+    font-size: 30px;
+}
+.header .title a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.header .title a:hover{
+    background-color: #4aaaea;
+    border-radius: 5px;
+}
+.header .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.nav {
+    background-color: #3b3838ac;
+    color: rgb(0, 0, 0);
+    width: 15%;
+    float: inline-start;
+    padding: 40px;
+}
+
+.nav .navbar {
+    list-style: none;
+}
+
+.nav .menu {
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
+
+.nav .menu:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Content Styling */
+.konten {
+    width: 75%;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: justify  ;
+}
+
+.konten p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.body {
+    flex-grow: 10;
+    display: flex;
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: auto;
+    background-color: rgba(255, 255, 255, 0.853);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+}
